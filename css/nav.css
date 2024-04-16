@@ -1,0 +1,19 @@
+header {
+    background-color: seashell ;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+}
+
+header ul li {
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#profile {
+    border-radius: 50%;
+}

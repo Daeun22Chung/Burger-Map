@@ -1,0 +1,37 @@
+[
+  {
+    "photo": "BB",
+    "name" : "Burger Brothers",
+    "addr" : "97 North Rd, Brighton and Hove, Brighton BN1 1YE UK",
+    "star" : "⭐️⭐⭐⭐⭐",
+    "review" : "Delicious burger, definitely worth popping by. We ordered a double \"our favourite\" and it didn't let us down. The burger was so tasty and yummy, we left the place full and happy, bc the staff were so nice with us as well. Excellent experience."
+  },
+  {
+    "photo": "GRB",
+    "name" : "Gordon Ramsay Burger",
+    "addr" : "87-135 Brompton Rd, London SW1X 7XL UK",
+    "star" : "⭐⭐⭐⭐",
+    "review" : "We tried the 1849 burger paired with truffle Parmesan fries – the burger was outstanding. The cocktails were robust and flavorful, and the cheesecake was excellent."
+  },
+  {
+    "photo": "BBBW",
+    "name" : "Bad Boys: Burgers & Wings",
+    "addr" : "9B Western Rd, Brighton and Hove, Hove BN3 1AE UK",
+    "star" : "⭐⭐⭐⭐⭐",
+    "review" : "I've been ordering from this place for a long time. Food always fresh and tasty. You can tell when your food is cooked freshly. Speedy delivery and always arrives hot. Love the options on their burgers and their generous sizes. Thank you for amazing service."
+  },
+  {
+    "photo": "NM",
+    "name" : "Naše maso",
+    "addr" : "Dlouhá 727/39, 110 00 Staré Město, Czech Republic",
+    "star" : "⭐⭐⭐⭐⭐",
+    "review" : "Probably one of the best beef tartare in the world. Super fresh and juicy. You can just tell that after one bite. The beef burger was also heavenly. Tiny, but efficient with a few chairs inside. I would definitely go back to Naše maso one day to grab some more."
+  },
+  {
+    "photo": "BC",
+    "name" : "Bacoa",
+    "addr" : "Ronda de la Univ., 31, L'Eixample, 08007 Barcelona, Spain",
+    "star" : "⭐⭐⭐⭐⭐",
+    "review" : "햄버거 패티 진짜 환상적이네요. 패티가 그냥 스테이크마냥 녹아요 ㄷㄷ 생각보다 자극적이지 않아서 패스트푸드 보다는 수제햄버거 느낌이구요. 재료 추가하면 비싸지는 대신 더 맛있어요. 생맥주도 팔아서 같이 먹는 것도 좋을듯 ㅎㅎ"
+  }
+]

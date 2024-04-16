@@ -1,0 +1,18 @@
+
+
+main {
+    position: relative;
+}
+
+footer {
+    bottom: 0;
+    height: 4vh;
+    background-color: burlywood;
+    text-align: center;
+}
+
+footer p {
+    padding: 10px;
+}
+
+

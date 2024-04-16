@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BURGER</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<header>
+    <ul>
+        <a href="asia.html"><img src="./images/mainburger.png" width="80"></a>
+        <li><a href="asia.html">Asia</a></li>
+        <li><a href="europe.html">Europe</a></li>
+        <li><a href="northAmerica.html">North America</a></li>
+        <li><a href="oceania.html">Oceania</a></li>
+        <img src="./images/cut.jpeg" height="65" id="profile">
+    </ul>
+</header>
+
+<main>
+    <div style="height: 30px"></div>
+    <div class="content">
+        <div id="map"></div>
+        <div class="info">
+            <div class="photoes"></div>
+            <p class="title"></p>
+            <p class="address"></p>
+            <div class="point"></div>
+            <div class="review"></div>
+            <button class="moreReview">리뷰 더보기</button>
+            <button class="handUp">방문했어요! ✋</button>
+        </div>
+    </div>
+    <div class="visited"></div>
+
+</main>
+
+<footer>
+    <div><p>made by Daeun</p></div>
+</footer>
+
+
+<script>
+
+    const locations = [
+        { place: "Burger Brothers", lat: 50.82566409818808, lng: -0.13778947194230512 },
+        { place: "Gordon Ramsay Burger", lat: 51.50086003832384, lng: -0.1633137984609594 },
+        { place: "Bad Boys: Burgers & Wings", lat: 50.825375008709656, lng: -0.15625055722183356 },
+        { place: "Naše maso", lat: 50.09105813091402, lng: 14.426803781328637 },
+        { place: "Bacoa", lat: 41.388155411124124, lng: 2.1671094233755466 },
+
+    ];
+
+    function initMap() {
+        const styledMapType = new google.maps.StyledMapType(
+            [
+                {
+                    featureType: "poi",
+                    elementType: "labels.icon",
+                    stylers: [{ visibility: "off" }],
+                },
+            ],
+        );
+
+        var mapOptions = {
+            center: new google.maps.LatLng(51.51, -0.13),
+            zoom: 4
+        };
+
+        var map = new google.maps.Map(
+            document.getElementById("map"), mapOptions);
+
+        map.mapTypes.set("styled_map", styledMapType);
+        map.setMapTypeId("styled_map")
+
+
+        // for (var i = 0; i < locations.length; i++) {
+        //     var marker = new google.maps.Marker({
+        //         map: map,
+        //         position: new google.maps.LatLng(locations[i].lat, locations[i].lng)
+        //     });
+        // }
+
+
+        var myIcon = new google.maps.MarkerImage("./images/marker64.png", null, null, null, new google.maps.Size(50, 57));
+
+        for (var i = 0; i < locations.length; i++) {
+            (function (i) {
+                var markerIcon = myIcon;
+
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+                    icon: markerIcon
+                });
+
+
+                marker.addListener("click", () => {
+                    $('.info').show();
+                    $.get('./europe.json')
+                        .done(function (data) {
+                            var imageUrl = './images/' + data[i].photo + '.png'
+                            var imageTag = '<img src="' + imageUrl + '" width="100%" height="400">'
+                            $('.photoes').html(imageTag);
+                            $('.title').html(data[i].name);
+                            $('.address').html(data[i].addr);
+                            $('.point').html('별점 : ' + data[i].star);
+                            $('.review').html('" ' + data[i].review + ' "');
+                        })
+                        .fail(function (error) {
+                            console.log('실패');
+                        })
+                });
+
+            })(i);
+        }
+    }
+    window.initMap = initMap;
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+</script>
+
+
+<script>
+    // 방문자 기록
+    var addVisitor = '<img src="./images/cut.jpeg" width="55" style="border-radius: 50%">'
+
+    $('.handUp').click(function () {
+        $('.visited').append(addVisitor);
+    })
+</script>
+
+</body>
+</html>

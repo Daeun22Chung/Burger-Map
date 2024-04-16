@@ -1,0 +1,37 @@
+[
+  {
+    "photo": "VB",
+    "name" : "비스타버거",
+    "addr" : "경기도 고양시 일산서구 비스타 강성로232번길 9 1층 102호",
+    "star" : "⭐️⭐⭐⭐⭐",
+    "review" : "일산에선 여기가 제일 맛있는듯"
+  },
+  {
+    "photo": "BGS",
+    "name" : "밤가시버거",
+    "addr" : "경기도 고양시 일산동구 일산로372번길 46",
+    "star" : "⭐⭐⭐⭐⭐",
+    "review" : "밤가시마을 밤리단길의 유명한 수제버거집이라고 해서 가봤어요! 버거 빵도 직접 만들고 그릴에 구워지는 패티의 지글지글 소리도 들리는 재미가 있었고 버거는 머쉬룸 버거가 맛있더라구요! 그리고 음료도 다양해서 좋았어요!!\n"
+  },
+  {
+    "photo": "HUN",
+    "name" : "훈버거스테이션",
+    "addr" : "전라남도 목포시 만호로29번길 18 KR 1층",
+    "star" : "⭐⭐⭐⭐⭐",
+    "review" : "서울에서도 찾아보기 쉽지 않은 수제버거 퀄리티, 감자튀김까지 만족스러웠다."
+  },
+  {
+    "photo": "FC",
+    "name" : "Fat Cow",
+    "addr" : "중국 Shanghai, Jing'An, 曹家渡延平路 邮政编码: 200042",
+    "star" : "⭐⭐⭐⭐⭐",
+    "review" : "Every Shanghai-er has been to Fat Cow at least once...they have a huge variety of creative burgers, authentic shakes and properly cooked steaks that always keeps people coming back. Recommend for anyone missing western comfort food."
+  },
+  {
+    "photo": "BH",
+    "name" : "汉堡屋BURGER HOUSE",
+    "addr" : "庐阳区爱国巷5号（四牌楼地铁站C口步行260米）",
+    "star" : "⭐⭐⭐⭐⭐",
+    "review" : "나는 햄버거를 정말정말 많이 좋아한다..\n햄버거가게는 적극적으로 찾아다니는 편.\n여기 수제버거는 허페이에서 손에꼽을 정도로 정말 맛있다. 그래서인지 여기는 올때마다 사람도 엄청 많다. 오픈한지 얼 마 안됐을 때 왔을 때는 1시간 넘게 기다렸다.. 그 이후에도 늘 올때마다 앞에 웨이팅이 많다. 음식 나오는 속도도 원 래 좀 느린 편인 듯.. 그래도 맛있다. ㅎㅎ\n여기서 햄버거먹고 3번에 올린 JL베이커리에서 디저트를 먹는데 햄버거집 사장님이 JL 베이커리에서 빵을 사가시는 걸 봤다. 아 그래서 햄버거도 빵도 다 맛있구나.. 하면서 역시 맛잘알은 서로 알아보는 것인가 했다 ㅋㅋ\n(지금 검색해보니 가게 수리 중이라고 나옴.)"
+  }
+]
