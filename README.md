@@ -5,12 +5,14 @@
 
 
 
----
-실행화면
+
+## 실행화면
 
 
+1) 기본페이지
 
 ![Screenshot 2024-04-16 at 21 26 37](https://github.com/Daeun22Chung/openAPI-Ajax/assets/164187336/b2ccf5da-f940-44de-b6fd-c13f21775c85)
 
+2) 마커 클릭시
 
 ![Screenshot 2024-04-16 at 21 26 51](https://github.com/Daeun22Chung/openAPI-Ajax/assets/164187336/d6146ba6-cd04-41ec-a43d-7f7dd6a7afcb)
